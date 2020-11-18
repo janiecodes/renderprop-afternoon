@@ -74,17 +74,16 @@ class CurrencyConverter extends Component {
 					{currencyOptions}
 				</select>
 				<div>
-					// ADD ONCLICK FUNCTION THAT CALLS handleAmountIncrease
+	
 					<button className='add' onClick={this.handleAmountIncrease}>
 						+
 					</button>
-					// ADD ONCLICK FUNCTION THAT CALLS handleAmountDecrease
+
 					<button className='minus' onClick={this.handleAmountDecrease}>
 						-
 					</button>
 				</div>
-                // CREATE A TERNARY TO DETERMINE WHAT TO DISPLAY DEPENDING ON WHETHER
-				// A CURRENCY HAS BEEN SELECTED OR NOT
+
 				{this.state.currencyChosen ? (
 					this.props.render(
 						currencyData[this.state.selectedCurrency],
